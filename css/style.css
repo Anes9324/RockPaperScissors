@@ -1,0 +1,126 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    color: white;
+    background: #181A1B;
+}
+
+.score-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.id_container,
+.dark_background {
+    background-color: #0E2235;
+}
+
+.player_id {
+    width: 450px; height: 150px;
+    border: 1px dotted #B4DFF1;
+    border-top-right-radius: 70px 70px;
+    border-bottom-right-radius: 70px 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.computer_id {
+    width: 450px; height: 150px;
+    border: 1px dotted #B4DFF1;
+    border-top-left-radius: 70px 70px;
+    border-bottom-left-radius: 70px 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.id_photo img {
+    width: 110px;
+    height: auto;
+}
+
+#player_stats {
+    border-top: 1px solid #ECFAFD;
+    border-top-right-radius: 70px 100% ;
+    border-right: 0.5px solid #ECFAFD;
+}
+
+.game_stats {
+    padding: 15px 40px;
+    border-left: 1px dashed white;
+    border-right: 1px dashed white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#round_stat {
+    width: 200px; height: 30px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+    background-color: #32394D;
+    border: 1px solid ;
+    border-radius: 10px;
+}
+
+#round_played {
+    font-size: 50px;
+    justify-self: center;
+    align-self: center;
+}
+
+#game_content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#player_section,
+#computer_section {
+    width: calc((100%-200px)/2);
+    height: auto;
+}
+
+
+#round_choices {
+    width: 450px; height: auto;
+    padding: 15px 40px;
+    border-left: 1px dashed white;
+    border-right: 1px dashed white;
+    border-radius: 10%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#round_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#player_options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+input[type="button"] {
+    background: black;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 10%;
+}

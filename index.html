@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div class="header" id="testPage">This is a test, all the work is done in the console for now</div>
+    <div class="score-bar">
+        <div class="player_id id_container"> 
+            <div id="player_photo" class="id_photo"> <img src="./img/player_id.webp" alt="player profil id"> </div> 
+            <div id="player_stats stats dark_background">
+                <div id="player_name" class="name">PLAYER</div>
+                <div class="player_choice"> </div> <!-- To complete if needed  -->
+                <div id="player_score">Score : 0</div>
+            </div>
+        </div>
+
+        <div class="game_stats"> 
+            <div id="round_stat">ROUND</div>
+            <div id="round_played">0</div>
+        </div>
+        
+        <div class="computer_id id_container"> 
+            <div id="computer_photo" class="id_photo"><img src="./img/computer_id.webp" alt="computer profil id"></div> 
+            <div id="computer_stats stats dark_background">
+                <div id="computer_name" class="name">COMPUTER</div>
+                <div class="computer_choice"> </div> <!-- To complete if needed --> 
+                <div id="computer_score ">Score : 0</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="game_content">
+        <div id="player_section">
+            <img src="img/Player_game_character.webp" alt="Player game character">
+        </div>
+        
+        <div id="round_choices"> 
+            
+            <div id="rules"> 
+                <h2>Rules of the game :</h2>
+                <section>- First to 5 wins wins the game</section>
+                <section></section>
+            </div>
+            
+            <div id="choice_section">
+                <div id="player_options">
+                    <div id="rock">
+                        <input type="button" value="ROCK">
+                    </div>
+                    <div id="paper">
+                        <input type="button" value="PAPER">
+                    </div>
+                    <div id="scissors">
+                        <input type="button" value="SCISSORS">
+                    </div>
+                </div>
+            </div>
+
+            <div id="player_hand">Player's choice : </div>
+            <div id="computer_hand">Computer's choice :</div>
+            <div id="round_score"> </div>
+        </div>
+        <div id="computer_section">
+            <img src="img/Computer_game_character.webp" alt="computer game character">
+        </div>
+    </div>
+
 </body>
 </html>
